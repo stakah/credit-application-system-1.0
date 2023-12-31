@@ -33,4 +33,15 @@ data class CustomerDto(
       street = this.street
     )
   )
+
+  constructor(customer: Customer): this(
+    firstName = customer.firstName,
+    lastName = customer.lastName,
+    cpf = customer.cpf,
+    income = customer.income,
+    email = customer.email,
+    password = customer.password,
+    zipCode = customer.address.zipCode,
+    street = customer.address.street,
+  )
 }

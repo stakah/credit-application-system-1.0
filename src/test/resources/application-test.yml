@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:credit_application_system_db
+    url: jdbc:h2:mem:test_db
     username: cami
     password:
   jpa:
@@ -8,6 +8,8 @@ spring:
     #hibernate:
     properties:
       hibernate.format_sql: true
+  flyway:
+    enabled: false
   h2:
     console:
       enabled: true
